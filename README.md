@@ -1,4 +1,8 @@
 # Begone-OneDrive
+
+Hay! Ally, ive wrote down the PowerShell program that should stop the evil OneDrive script malware from halting any core processes, and overall PC gaming performance,
+This is a looped program and will stay dormant in your background until it detects OneDrive again.
+
 ```
 $paths = @("HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders", "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders")
 foreach ($path in $paths) {
