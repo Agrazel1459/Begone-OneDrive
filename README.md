@@ -1,5 +1,5 @@
 # Begone-OneDrive
-
+```
 $paths = @("HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders", "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders")
 foreach ($path in $paths) {
     if (Test-Path $path) {
@@ -9,3 +9,4 @@ foreach ($path in $paths) {
 }
 if (!(Test-Path "$env:USERPROFILE\Desktop")) { New-Item -ItemType Directory -Path "$env:USERPROFILE\Desktop" -Force }
 Stop-Process -Name explorer -Force
+```
